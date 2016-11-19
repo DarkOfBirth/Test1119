@@ -1,6 +1,7 @@
 package lanou.text1119;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -34,4 +35,9 @@ public class WangYe extends Activity{
         this.getName = getName;
     }
 
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+    }
 }
